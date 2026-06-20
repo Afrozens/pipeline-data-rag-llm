@@ -3,7 +3,6 @@ from typing import Dict, List, Optional, Tuple, Any
 from openpyxl import load_workbook
 from openpyxl.worksheet.worksheet import Worksheet
 
-
 def _get_worksheet(file_path: str, sheet_name: Optional[str] = None) -> Tuple[Worksheet, str]:
     wb = load_workbook(file_path, read_only=True, data_only=True)
     try:
